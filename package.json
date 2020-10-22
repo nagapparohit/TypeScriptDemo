@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"tsc var.ts let.ts const.ts primitives.ts special.ts operators.ts  classes.ts -w",
+    "start":"tsc -t es5 var.ts let.ts const.ts primitives.ts special.ts operators.ts  classes.ts interfaces.ts -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "rohit nagappa",
