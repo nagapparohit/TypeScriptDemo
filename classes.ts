@@ -1,11 +1,17 @@
 class Person{
 
-    firstName : string;
-    lastName : string;
-    age:number;
+    // firstName : string;
+    // lastName : string;
+    // age:number;
 
-    constructor(firstName:string,lastName:string,age:number){
-
+    constructor(
+        private firstName:string,
+        private lastName:string,
+        private age:number
+         ){
+        // this.firstName = firstName;
+        // this.lastName = lastName;
+        // this.age = age;
     }
 
     getFullName():string{

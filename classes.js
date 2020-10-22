@@ -1,5 +1,14 @@
 var Person = /** @class */ (function () {
+    // firstName : string;
+    // lastName : string;
+    // age:number;
     function Person(firstName, lastName, age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        // this.firstName = firstName;
+        // this.lastName = lastName;
+        // this.age = age;
     }
     Person.prototype.getFullName = function () {
         return this.firstName + "  " + this.lastName;
