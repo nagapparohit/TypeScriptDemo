@@ -5,9 +5,9 @@ class Person{
     // age:number;
 
     constructor(
-        private firstName:string,
-        private lastName:string,
-        private age:number
+        protected  firstName:string,
+        protected   lastName:string,
+        protected   age:number
          ){
         // this.firstName = firstName;
         // this.lastName = lastName;
@@ -37,13 +37,13 @@ class Employee extends Person{
     }
 
     getFullName():string{
-            const nameSegments : Array<string> = super.getFullName().split(' ');
-            nameSegments.splice(1,0,this.middleName);
+            // const nameSegments : Array<string> = super.getFullName().split(' ');
+            // nameSegments.splice(1,0,this.middleName);
 
-            const fullName = nameSegments.join(' ');
+            // const fullName = nameSegments.join(' ');
 
-            return `${fullName}`;
-            
+            return `${this.firstName} ${this.middleName} ${this.lastName}`;
+
 
     }
    

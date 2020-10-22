@@ -39,10 +39,10 @@ var Employee = /** @class */ (function (_super) {
         return _this;
     }
     Employee.prototype.getFullName = function () {
-        var nameSegments = _super.prototype.getFullName.call(this).split(' ');
-        nameSegments.splice(1, 0, this.middleName);
-        var fullName = nameSegments.join(' ');
-        return "" + fullName;
+        // const nameSegments : Array<string> = super.getFullName().split(' ');
+        // nameSegments.splice(1,0,this.middleName);
+        // const fullName = nameSegments.join(' ');
+        return this.firstName + " " + this.middleName + " " + this.lastName;
     };
     return Employee;
 }(Person));
