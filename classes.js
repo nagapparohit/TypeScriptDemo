@@ -23,6 +23,13 @@ var Person = /** @class */ (function () {
         // this.lastName = lastName;
         // this.age = age;
     }
+    Object.defineProperty(Person.prototype, "personFirstName", {
+        get: function () {
+            return this.firstName;
+        },
+        enumerable: false,
+        configurable: true
+    });
     Person.prototype.getFullName = function () {
         return this.firstName + "  " + this.lastName;
     };
@@ -38,6 +45,16 @@ var Employee = /** @class */ (function (_super) {
         _this.middleName = middleName;
         return _this;
     }
+    Object.defineProperty(Employee.prototype, "employeeId", {
+        get: function () {
+            return this.id;
+        },
+        set: function (employeeId) {
+            this.id = employeeId;
+        },
+        enumerable: false,
+        configurable: true
+    });
     Employee.prototype.getFullName = function () {
         // const nameSegments : Array<string> = super.getFullName().split(' ');
         // nameSegments.splice(1,0,this.middleName);
@@ -48,3 +65,7 @@ var Employee = /** @class */ (function (_super) {
 }(Person));
 var manager = new Employee(1, 'roht', 'nagappa', 'kumar', 28);
 console.log(manager.getFullName());
+var manager2 = new Employee(1, 'roht1', 'nagappa1', 'kumar1', 28);
+manager2.employeeId = 22;
+console.log(manager2.employeeId);
+console.log(manager2.personFirstName);

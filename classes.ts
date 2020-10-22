@@ -14,6 +14,9 @@ class Person{
         // this.age = age;
     }
 
+    get personFirstName():string{
+        return this.firstName;
+    }
     getFullName():string{
         return `${this.firstName}  ${this.lastName}`;
     }
@@ -26,6 +29,14 @@ console.log(person.getFullName())
 
 class Employee extends Person{
 
+    get employeeId():number {
+        return this.id;
+    }
+
+    
+    set employeeId(employeeId:number){
+        this.id =employeeId;
+    }
     constructor(
         private id:number,
         firstName:string,
@@ -53,3 +64,13 @@ class Employee extends Person{
 const manager : Person = new Employee(1,'roht','nagappa','kumar',28);
 
 console.log(manager.getFullName());
+
+const manager2 : Employee = new Employee(1,'roht1','nagappa1','kumar1',28);
+
+manager2.employeeId = 22;
+
+console.log(manager2.employeeId);
+console.log(manager2.personFirstName);
+
+
+
