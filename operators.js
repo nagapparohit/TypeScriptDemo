@@ -31,8 +31,8 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
 {
     var fruits = ['apple', 'grape', 'mango'];
     var food = ['pizza', 'burgger'];
-    var edibles = __spreadArrays(fruits, food);
-    console.log(edibles);
+    var edibles_1 = __spreadArrays(fruits, food);
+    console.log(edibles_1);
     // object
     var user_1 = {
         firstName: 'rohit',
@@ -66,7 +66,7 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
     console.log(apple);
     console.log(mango);
     //Rest parameter
-    var jsutApple = edibles[0], restEdibles = edibles.slice(1);
+    var jsutApple = edibles_1[0], restEdibles = edibles_1.slice(1);
     console.log("just apple : ", jsutApple);
     console.log("rest of edibles : ", restEdibles);
     var firstName = userDetails.firstName, restUserDetials = __rest(userDetails, ["firstName"]);
@@ -80,5 +80,5 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
         console.log("in function", apple);
         console.log("in function", restEdibles);
     }
-    getEdibles.apply(void 0, edibles);
+    getEdibles.apply(void 0, edibles_1);
 }
