@@ -34,12 +34,12 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
     var edibles = __spreadArrays(fruits, food);
     console.log(edibles);
     // object
-    var user = {
+    var user_1 = {
         firstName: 'rohit',
         lastname: 'nagappa',
         username: 'rohitnagappa'
     };
-    var userDetails = __assign(__assign({}, user), { address: '123 East ', email: 'nag@gmail.com' });
+    var userDetails = __assign(__assign({}, user_1), { address: '123 East ', email: 'nag@gmail.com' });
     console.log('got the user as : ', userDetails);
     //functions
     function add(x, y, z) {
@@ -49,16 +49,16 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
     console.log("got the sum of all the numbers : ", add.apply(void 0, numbers));
     //backticks
     console.log('the user with name : '
-        + user.firstName
+        + user_1.firstName
         + ' has an address of '
         + userDetails.address
         + ' and email is '
         + userDetails.email);
-    console.log("The user with name : " + user.firstName + " has an address of " + userDetails.address + " and an email of " + userDetails.email);
+    console.log("The user with name : " + user_1.firstName + " has an address of " + userDetails.address + " and an email of " + userDetails.email);
     console.log("Got the userdetial " + userDetails);
     console.log("Got the userdetial ", userDetails);
     //destructure
-    var fName = user.firstName, lName = user.lastname;
+    var fName = user_1.firstName, lName = user_1.lastname;
     console.log(fName);
     console.log(lName);
     //array desturcture

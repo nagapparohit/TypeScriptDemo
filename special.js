@@ -18,7 +18,7 @@ function logToConsole() {
     var genTuple = void 0;
     genTuple = [12, "rohit", true];
     //objects
-    var user = {
+    var user_1 = {
         firstName: 'sidd',
         lastname: 'ajmera',
         username: 'sideajmeraa',
