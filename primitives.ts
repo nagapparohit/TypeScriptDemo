@@ -36,5 +36,22 @@ authorized =(() => false) ();
     username = null;
     username = undefined;
     username = (() => `rohit nagappa`)();
+
+
+    //null
+    let data:null;
+    data = null;
+    data = undefined;
+    data = (()=> null)();
+    data = (() => undefined)();
+
+    //undefined
+    let userData : undefined;
+
+    userData = undefined;
+    userData  = (() => undefined)();
+    userData = null;
+    userData = (()=> null)();
     
+
 }

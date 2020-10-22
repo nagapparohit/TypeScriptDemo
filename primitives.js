@@ -25,4 +25,16 @@ authorized = (function () { return false; })();
     username = null;
     username = undefined;
     username = (function () { return "rohit nagappa"; })();
+    //null
+    var data = void 0;
+    data = null;
+    data = undefined;
+    data = (function () { return null; })();
+    data = (function () { return undefined; })();
+    //undefined
+    var userData = void 0;
+    userData = undefined;
+    userData = (function () { return undefined; })();
+    userData = null;
+    userData = (function () { return null; })();
 }
