@@ -6,7 +6,7 @@ authorized = undefined;
 authorized = true;
 authorized = (function () { return true; })();
 authorized = (function () { return false; })();
-{
+{ //number
     var myNumber_1;
     myNumber_1 = 10;
     myNumber_1 = -10;
@@ -17,4 +17,12 @@ authorized = (function () { return false; })();
     myNumber_1 = null;
     myNumber_1 = undefined;
     myNumber_1 = (function () { return 83; })();
+    //string
+    var username = void 0;
+    username = "rohit nagappa";
+    username = 'rohit';
+    username = "rohit".toUpperCase();
+    username = null;
+    username = undefined;
+    username = (function () { return "rohit nagappa"; })();
 }

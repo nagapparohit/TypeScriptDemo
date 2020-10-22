@@ -15,7 +15,7 @@ authorized = (() => true) ();
 
 authorized =(() => false) ();
 
-{
+{//number
     let myNumber :number;
     myNumber  = 10;
     myNumber = -10;
@@ -26,5 +26,15 @@ authorized =(() => false) ();
     myNumber = null;
     myNumber = undefined;
     myNumber = (() => 0o123)();
+
+    //string
+    let username:string;
+    username = "rohit nagappa";
+    username = 'rohit';
+
+    username = `rohit`.toUpperCase();
+    username = null;
+    username = undefined;
+    username = (() => `rohit nagappa`)();
     
 }
