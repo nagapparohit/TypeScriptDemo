@@ -48,6 +48,34 @@
 
     console.log(`Got the userdetial `,userDetails);
 
+    //destructure
+    let { firstName :fName, lastname : lName} = user;
+    console.log(fName);
+    console.log(lName);
+
+    //array desturcture
+
+    let [ apple , mango ] = fruits;
+    console.log(apple);
+    console.log(mango);
+
+    //Rest parameter
+    let [jsutApple , ...restEdibles] = edibles;
+
+    console.log("just apple : ",jsutApple);
+    console.log("rest of edibles : ",restEdibles);
+
+    let {firstName , ...restUserDetials} = userDetails;
+
+    console.log("first name is :",firstName);
+    console.log(" rest user props :",restUserDetials);
+
+    function  getEdibles(apple ?,...restEdibles){
+        console.log("in function",apple);
+        console.log("in function",restEdibles);
+    }
+
+    getEdibles(...edibles);
     
 
 
